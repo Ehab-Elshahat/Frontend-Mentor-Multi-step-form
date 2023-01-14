@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <!-- Custom Style Css File  -->
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Frontend Mentor | Multi-step form</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidebar start -->
+      <aside>
+        <ul class="steps">
+          <li class="active">
+            <span class="step-number">1</span>
+            <div class="step-info">
+              <h4>Step 1</h4>
+              <h2>YOUR INFO</h2>
+            </div>
+          </li>
+          <li>
+            <span class="step-number">2</span>
+            <div class="step-info">
+              <h4>Step 2</h4>
+              <h2>Select plan</h2>
+            </div>
+          </li>
+          <li>
+            <span class="step-number">3</span>
+            <div class="step-info">
+              <h4>Step 3</h4>
+              <h2>Add-ons</h2>
+            </div>
+          </li>
+          <li>
+            <span class="step-number">4</span>
+            <div class="step-info">
+              <h4>Step 4</h4>
+              <h2>Summary</h2>
+            </div>
+          </li>
+        </ul>
+      </aside>
+      <!-- Sidebar end -->
+
+      <!--  Personal info Start  -->
+      <section class="section-box active animate__animated animate__fadeIn">
+        <h2 class="section-title">Personal info</h2>
+        <p>Please provide your name, email address, and phone number.</p>
+        <form>
+          <div class="input-box">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="e.g. Stephen King"
+              required
+            />
+            <span>Pleas Fill This Field</span>
+          </div>
+
+          <div class="input-box">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="e.g. stephenking@lorem.com"
+              required
+            />
+            <span>Pleas Fill This Field</span>
+          </div>
+
+          <div class="input-box">
+            <label for="phone">Phone Number</label>
+            <input
+              type="text"
+              name="phone-number"
+              id="phone-number"
+              placeholder="e.g. +1 234 567 890"
+              required
+            />
+            <span>Pleas Fill This Field</span>
+          </div>
+        </form>
+      </section>
+      <!--  Personal info End  -->
+
+      <!-- Select your plan Start  -->
+      <section class="section-box animate__animated animate__fadeIn">
+        <h2 class="section-title">Select your plan</h2>
+        <p>You have the option of monthly or yearly billing.</p>
+        <div class="plans">
+          <div class="plan one active">
+            <div class="plan-icon">
+              <img src="./assets/images/icon-arcade.svg" alt="Arcade" />
+            </div>
+            <div>
+              <h3 class="plan-title">Arcade</h3>
+              <span class="plan-amount">$9/mo</span>
+            </div>
+          </div>
+          <div class="plan two">
+            <div class="plan-icon">
+              <img src="./assets/images/icon-advanced.svg" alt="Advanced" />
+            </div>
+            <div>
+              <h3 class="plan-title">Advanced</h3>
+              <span class="plan-amount">$12/mo</span>
+            </div>
+          </div>
+          <div class="plan three">
+            <div class="plan-icon">
+              <img src="./assets/images/icon-pro.svg" alt="Pro" />
+            </div>
+            <div>
+              <h3 class="plan-title">Pro</h3>
+              <span class="plan-amount">$15/mo</span>
+            </div>
+          </div>
+        </div>
+        <div class="month-yearly">
+          <span class="monthly active">Monthly</span>
+          <span class="btn-back">
+            <span class="btn-bill"></span>
+          </span>
+          <span class="yearly">Yearly</span>
+        </div>
+      </section>
+      <!-- Select your plan End -->
+
+      <!-- Pick add-ons Start  -->
+      <section class="section-box animate__animated animate__fadeIn">
+        <h2 class="section-title">Pick add-ons</h2>
+        <p>Add-ons help enhance your gaming experience.</p>
+        <label class="pick-box">
+          <input type="checkbox" name="online" id="online" />
+
+          <div class="pick-desc">
+            <h3 class="pick-title">online service</h3>
+            <p class="pick-paragraph">Access to multiplayer games</p>
+          </div>
+          <span class="pick-amount">+$1/<span>mo</span></span>
+        </label>
+        <label class="pick-box">
+          <input type="checkbox" name="" id="" />
+          <div class="pick-desc">
+            <h3 class="pick-title">Larger storage</h3>
+            <p class="pick-paragraph">Extra 1TB of cloud save</p>
+          </div>
+          <span class="pick-amount">+$2/<span>mo</span></span>
+        </label>
+        <label class="pick-box">
+          <input type="checkbox" name="online" id="" />
+          <div class="pick-desc">
+            <h3 class="pick-title">Customizable Profile</h3>
+            <p class="pick-paragraph">Custom theme on your profile</p>
+          </div>
+          <span class="pick-amount">+$3/<span>mo</span></span>
+        </label>
+      </section>
+      <!-- Pick add-ons End -->
+
+      <!-- Finishing up Start  -->
+      <section class="section-box summary animate__animated animate__fadeIn">
+        <h2 class="section-title">Finishing up</h2>
+        <p>Double-check everything looks OK before confirming.</p>
+        <div class="finish-box">
+          <div class="arcade">
+            <div>
+              <h3>Arcade <span>(Monthly)</span></h3>
+              <a href="#">Change</a>
+            </div>
+            <span>$9/ <span>mo</span></span>
+          </div>
+          <div class="hr"></div>
+          <div class="online">
+            <h4>Online Service</h4>
+            <span>$1/ <span>mo</span></span>
+          </div>
+          <div class="online">
+            <h4>Large Storage</h4>
+            <span>$2/ <span>mo</span></span>
+          </div>
+        </div>
+        <div class="total">
+          <h4>Totals <span>(per month)</span></h4>
+          <span>+$12/ <span>mo</span></span>
+        </div>
+      </section>
+      <!-- Finishing up End -->
+
+      <!-- Thank you! Start  -->
+      <section class="section-box animate__animated animate__fadeIn">
+        <div class="thank-box">
+          <img
+            src="./assets/images/icon-thank-you.svg"
+            alt=""
+            class="thank-img"
+          />
+          <h2>Thank you!</h2>
+          <p>
+            Thanks for confirming your subscription! We hope you have fun using
+            our platform. If you ever need support, please feel free to email us
+            at support@loremgaming.com.
+          </p>
+        </div>
+      </section>
+      <!-- Thank you! End -->
+      <div class="controls">
+        <button class="next-btn">Next Step</button>
+        <button class="go-back-btn">Go Back</button>
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
